@@ -1,2 +1,2 @@
-# sven-alaric.com
+# sven-alaric.github.io
 website?
