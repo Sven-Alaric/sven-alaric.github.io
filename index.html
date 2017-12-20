@@ -3,14 +3,16 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
 <title>Sven's Athenaeum</title>
-<style>
+<style>    
 ::-webkit-scrollbar {
-    width: 20px;
+	width: 20px;
 }
 ::-webkit-scrollbar-track {
-    background: url(https://sven-alaric.github.io/images/rope.png);
-    background-size: 8px 65px;
-    border-radius: 10px;
+	border-radius: 0px;
+	background-image: url(https://sven-alaric.github.io/images/rope2.png);
+	background-size: 12px 30px;
+	background-repeat: repeat-y;
+	background-position: center;
 }
 body {
 	background: url(https://sven-alaric.github.io/backgroundtile.png);
@@ -95,9 +97,6 @@ p.remedius {
 	top: 270px;
 	font-family: humanistica;
 	font-size: 20px;
-	width: 300px;
-	height: 450px;
-	overflow-y: scroll;
 }
 </style>
 </head>
@@ -110,7 +109,7 @@ p.remedius {
 	<div class="paper" id="paper">
 		<img src="https://sven-alaric.github.io/images/paper.png" alt="paper" width="400" height="521" align="left"/>
 	</div>
-	<div class="papertext" id="papertext">
+	<div class="papertext" id="papertext" style="width: 300; height: 450; overflow-y: scroll;">
 		<p>News Updates:</p>
 		<p>Website still under construction, but is working. Being worked on as we speak. Needs quite a bit of editing
 		but it isnt too far from being usable. Mostly being tested, with lame writing and more. Hence all of this. I may as well have written lorem ipsum, but whatever.</p>
