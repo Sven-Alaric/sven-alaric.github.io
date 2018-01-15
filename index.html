@@ -2,33 +2,46 @@
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
+<link type="text/css" rel="stylesheet" href="styles.css">
 <title>Sven's Athenaeum</title>
-<style>    
-#style-1::-webkit-scrollbar {
-	width: 20px;
+<style>
+.papertext {
+	position: absolute;
+	left: 90px;
+	top: 300px;
+	font-family: humanistica;
+	font-size: 20px;
+	width: 310px;
+ 	height: 450px;
+ 	overflow-y: overlay;
 }
-#style-1::-webkit-scrollbar-track {
-	border-radius: 0px;
+.papertext::-webkit-scrollbar {
+	width: 15px;
+}
+.papertext::-webkit-scrollbar-track {
 	background-image: url(https://sven-alaric.github.io/images/rope3.png);
-	background-size: 12px 30px;
+	background-size: 15px 10px;
 	background-repeat: repeat-y;
 	background-position: center;
+        width: 15px;
 }
-#style-1::-webkit-scrollbar-button:vertical:decrement {
-	border-radius: 0px;
-    background: url(https://sven-alaric.github.io/images/buttonup.png);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    size: 20px;
+.papertext::-webkit-scrollbar-button:vertical:decrement {
+	background: url(https://sven-alaric.github.io/images/buttonup.png);
+	background-size: 15px 10px;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
 }
-#style-1::-webkit-scrollbar-button:vertical:increment {
-	border-radius: 0px;
-    background: url(https://sven-alaric.github.io/images/buttondown.png);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    size: 20px;
+.papertext::-webkit-scrollbar-button:vertical:increment {
+	background: url(https://sven-alaric.github.io/images/buttondown.png);
+	background-size: 15px 10px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.papertext::-webkit-scrollbar-thumb {
+        background: url(https://sven-alaric.github.io/images/handle.png);
+	background-repeat: repeat-y;
+	background-size: 10px 16px;
+	background-position: center;
 }
 body {
 	background: url(https://sven-alaric.github.io/backgroundtile.png);
@@ -107,16 +120,6 @@ p.remedius {
 	top: 270px;
 	z-index: -1;
 }
-.papertext {
-	position: absolute;
-	left: 90px;
-	top: 270px;
-	font-family: humanistica;
-	font-size: 20px;
-	width: 300px;
- 	height: 450px;
- 	overflow-y: scroll;
-}
 </style>
 </head>
 <body>
@@ -128,11 +131,12 @@ p.remedius {
 	<div class="paper" id="paper">
 		<img src="https://sven-alaric.github.io/images/paper.png" alt="paper" width="400" height="521" align="left"/>
 	</div>
-	<div class="webkit-scrollbar" id="style-1" style="width: 300; height: 450; overflow-y: scroll;">
+            <div class="papertext" id="papertext">
 		<p>News Updates:</p>
 		<p>Website still under construction, but is working. Being worked on as we speak. Needs quite a bit of editing
-		but it isnt too far from being usable. Mostly being tested, with lame writing and more. Hence all of this. I may as well have written lorem ipsum, but whatever.</p>
-	</div>
+		but it isnt too far from being usable. Mostly being tested, with lame writing and more. Hence all of this.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
 	<div align="center">WEBSITE UNDER CONSTRUCTION</div>
 	<div class="li" role="li" id="buttons" align="center">
 		<li><input class="button1" type="button" value="" onclick="window.location.href='../writings.html'" /></li>
